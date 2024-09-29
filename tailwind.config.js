@@ -28,8 +28,13 @@ export default {
           600: '#03986b',
         },
         'support' : {
-
+          100: '#e7e7e7',
+          200: '#d1d1d1',
+          300: '#b0b0b0',
           600: '#5a5a5a',
+        },
+        'additional' : {
+          700: '#c0392b',
         },
       },
       padding: {
@@ -37,11 +42,24 @@ export default {
         'custom-13': '13rem',
       },
       margin: {
+        'custom-17': '19rem',
         'custom-21': '21rem',
       },
       borderWidth: {
         'custom-1': '1px', 
       },
+      minWidth: {
+        'custom-16.5': '16.5rem',
+        'custom-66': '66rem',
+      },
+      minHeight: {
+        'custom-27': '27rem',
+        'custom-35': '35rem',
+      },
+      maxWidth: {
+        'custom-47': '47.4rem',
+      },
+
     },
   },
   plugins: [],
