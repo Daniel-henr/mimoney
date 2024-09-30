@@ -23,6 +23,7 @@ export default {
         },
         'secondary': {
           100: '#d1fae5',
+          200: '#a6f4d1',
           300: '#6de8b8',
           400: '#28C28B',
           600: '#03986b',
@@ -34,6 +35,9 @@ export default {
           600: '#5a5a5a',
         },
         'additional' : {
+          100:'#fce6e4',
+          200: '#fad2ce',
+          600: '#cf4233',
           700: '#c0392b',
         },
       },
