@@ -61,7 +61,11 @@ export default {
         'custom-35': '35rem',
       },
       maxWidth: {
+        'custom-31': '31rem',
         'custom-47': '47.4rem',
+      },
+      clipPath: {
+        'custom': 'polygon(0% 100%, 10% 80%, 30% 30%, 50% 60%, 70% 10%, 90% 25%, 100% 100%)',
       },
 
     },

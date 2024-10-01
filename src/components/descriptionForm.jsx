@@ -6,7 +6,7 @@ const DescriptionForm = () => {
       {/* Seção de Descrição */}
       <div className='flex'>
         <div>
-          <h2 className='font-bold text-sm text-primary-950'>Descrição</h2>
+          <h2 className='font-bold pb-1 text-sm text-primary-950'>Descrição</h2>
           <label className='border-essencial-200'>
             <input
               className='h-7 w-64 bg-support-100 border-support-200 border-custom-1 rounded-md placeholder:font-semibold pl-1 text-sm focus:outline-none text-primary-950 font-semibold'
@@ -18,7 +18,7 @@ const DescriptionForm = () => {
 
         {/* Seção de Valor */}
         <div className='ml-5'>
-          <h2 className='font-bold text-sm text-primary-950'>Valor</h2>
+          <h2 className=' pb-1 font-bold text-sm text-primary-950'>Valor</h2>
           <label className='border-essencial-200'>
             <input
               className='w-28 h-7 bg-support-100 border-support-200 border-custom-1 rounded-md placeholder:font-semibold pl-1 focus:outline-none font-semibold text-primary-950'
@@ -34,7 +34,7 @@ const DescriptionForm = () => {
         <label className='flex items-center space-x-2'>
           <input type="checkbox" className='hidden peer' />
           <span className='w-5 h-5 inline-block rounded-full bg-secondary-100 border-secondary-200 border-custom-1 peer-checked:bg-secondary-400'></span>
-          <span className='text-sm text-primary-950 font-medium'>Entrada</span>
+          <span className=' text-sm text-primary-950 font-medium'>Entrada</span>
         </label>
 
         <label className='flex items-center space-x-2'>
