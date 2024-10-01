@@ -5,7 +5,7 @@ import CircularProgress from './circularProgress';
 
 const Savings = () => {
   return (
-    <section className="max-w-64 min-h-custom-27 bg-essencial-50 border-essencial-200 border-custom-1 rounded-xl py-2 px-4 dark:bg-support-950 dark:border-support-600">
+    <section className="transition-colors duration-500 max-w-64 min-h-custom-27 bg-essencial-50 border-essencial-200 border-custom-1 rounded-xl py-2 px-4 dark:bg-support-950 dark:border-support-600">
       {/* Header com Ícone e Título */}
       <header className="flex items-center">
         <FontAwesomeIcon icon={faPiggyBank} className="w-6 h-6 text-primary-950 dark:text-support-200" />

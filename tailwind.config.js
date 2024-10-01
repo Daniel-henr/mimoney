@@ -19,6 +19,7 @@ export default {
         },
         'primary': {
           100: '#e7eaf2',
+          200: '#d4d9e9',
           300: '#b7c1d9',
           400: '#94a1c6',
           600: '#6871a8',
@@ -50,6 +51,11 @@ export default {
           600: '#cf4233',
           700: '#c0392b',
         },
+        'sup-darkMode': {
+          200: '#d9d9de',
+          300: '#b8b9c1',
+
+        }
       },
       padding: {
         'custom-38': '38px',

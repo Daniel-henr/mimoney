@@ -4,7 +4,7 @@ import { faArrowTrendDown } from '@fortawesome/free-solid-svg-icons';
 
 const Costs = () => {
   return (
-    <section className="bg-essencial-50 border-essencial-200 border-custom-1 flex max-w-60 max-h-28 rounded-xl py-2 px-4 dark:bg-support-950 dark:border-support-600">
+    <section className="transition-colors duration-500 bg-essencial-50 border-essencial-200 border-custom-1 flex max-w-60 max-h-28 rounded-xl py-2 px-4 dark:bg-support-950 dark:border-support-600">
       {/* Header com Ícone e Título */}
       <div className="flex-grow">
         <header className="flex items-center">

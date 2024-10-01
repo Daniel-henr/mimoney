@@ -6,7 +6,7 @@ import { faChartColumn } from '@fortawesome/free-solid-svg-icons';
 
 const CashFlow = () => {
   return (
-    <div className='mt-4 py-2 px-4 max-w-custom-31 min-h-52 bg-essencial-50 border-custom-1 border-essencial-200 rounded-xl dark:bg-support-950 dark:border-support-600'>
+    <div className='transition-colors duration-500 mt-4 py-2 px-4 max-w-custom-31 min-h-52 bg-essencial-50 border-custom-1 border-essencial-200 rounded-xl dark:bg-support-950 dark:border-support-600'>
       {/* Cabeçalho do gráfico */}
       <header className='flex items-center'>
         <FontAwesomeIcon icon={faChartColumn} className='text-primary-950 w-5 h-5 dark:text-essencial-200' />

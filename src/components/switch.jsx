@@ -16,12 +16,7 @@ const Switch = () => {
     }, [darkMode])
 
     return (
-     
-            
-            <label className='relative inline-flex items-center  cursor-pointer mr-7 '>
-            <div className=''>
-                
-            </div>
+            <label className=' relative inline-flex items-center  cursor-pointer mr-7 '>
                 <button
                     onClick={ToggleDarkMode}
                 >

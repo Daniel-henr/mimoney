@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='transition-colors duration-500 bg-essencial-50 flex font-sans dark:bg-support-950 '>
+    <div className='transition-colors duration-300 bg-essencial-50 flex font-sans dark:bg-support-950 '>
       <div>
       <Navbar />
       </div>
