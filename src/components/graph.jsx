@@ -27,8 +27,8 @@ const Graph = () => {
         label: 'Cash Flow',
         data: [50, 150, 100, 200, 250, 300],
         fill: true,
-        backgroundColor: 'rgba(75,192,192,0.3)',
-        borderColor: 'rgba(75,192,192,1)',
+        backgroundColor: 'rgba(40,192,139,0.3)',
+        borderColor: 'rgba(40,194,139,1)',
         tension: 0.4,  // Para deixar as curvas mais suaves
       },
     ],

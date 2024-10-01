@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -17,7 +18,10 @@ export default {
           300: '#bdbdbd'
         },
         'primary': {
+          100: '#e7eaf2',
+          300: '#b7c1d9',
           400: '#94a1c6',
+          600: '#6871a8',
           800: '#4f527e',
           950: '#2a2b3d'
         },
@@ -27,15 +31,21 @@ export default {
           300: '#6de8b8',
           400: '#28C28B',
           600: '#03986b',
+          700: '#037959',
+          800: '#056047',
         },
-        'support' : {
+        'support': {
+          50: '#f6f6f6',
           100: '#e7e7e7',
           200: '#d1d1d1',
           300: '#b0b0b0',
           600: '#5a5a5a',
+          700: '#4F4F4F',
+          900: '#3d3d3d',
+          950: '#262626'
         },
-        'additional' : {
-          100:'#fce6e4',
+        'additional': {
+          100: '#fce6e4',
           200: '#fad2ce',
           600: '#cf4233',
           700: '#c0392b',
@@ -50,7 +60,7 @@ export default {
         'custom-21': '21rem',
       },
       borderWidth: {
-        'custom-1': '1px', 
+        'custom-1': '1px',
       },
       minWidth: {
         'custom-16.5': '16.5rem',
