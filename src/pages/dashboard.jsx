@@ -1,4 +1,3 @@
-import React from 'react'
 import Balance from '../components/balance'
 import Income from '../components/income'
 import Costs from '../components/costs'
@@ -9,6 +8,10 @@ import CostVisualizer from '../components/costVisualizer'
 
 
 const Dashboard = () => {
+  const handleTransactionSubmit = (transaction) => {
+    console.log('transação recebida!', transaction)
+  }
+
   return (
     <div className='transition-colors duration-300'>
       <h1 className='text-primary-950 text-4xl font-semibold ml-4 mt-2 dark:text-essencial-50'>Dashboard</h1>
@@ -19,10 +22,10 @@ const Dashboard = () => {
           <Costs />
           <Savings />
         </div>
-        <DescriptionForm />
+        <DescriptionForm onSubmit={handleTransactionSubmit} />
         <div className='grid grid-cols-4'>
           <div className='col-span-2'>
-          <CashFlow />
+            <CashFlow />
           </div>
           <CostVisualizer />
         </div>

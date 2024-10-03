@@ -8,12 +8,12 @@ const Balance = () => {
       {/* Ícone e Título */}
       <div className="flex-grow">
         <header className="flex items-center">
-          <FontAwesomeIcon icon={faWallet} className="w-5 h-6 text-primary-950 dark:text-essencial-300" />
-          <h1 className="font-medium text-xl ml-1 text-primary-950 dark:text-essencial-300">Seu Saldo</h1>
+          <FontAwesomeIcon icon={faWallet} className="w-5 h-6 text-primary-950 dark:text-essencial-200" />
+          <h1 className="font-medium text-xl ml-1 text-primary-950 dark:text-essencial-200">Seu Saldo</h1>
         </header>
 
         {/* Valor do Saldo */}
-        <p className="text-3xl font-bold text-primary-950 mt-5 dark:text-essencial-300">
+        <p className="text-3xl font-bold text-primary-950 mt-5 dark:text-essencial-200">
           R$<span className="ml-1">0,00</span>
         </p>
       </div>

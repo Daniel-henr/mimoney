@@ -48,6 +48,7 @@ export default {
         'additional': {
           100: '#fce6e4',
           200: '#fad2ce',
+          400: '#ef857a',
           600: '#cf4233',
           700: '#c0392b',
         },
