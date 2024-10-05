@@ -1,10 +1,13 @@
-import React from 'react';
+import { useTransactions } from '../hooks/transactionsContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet } from '@fortawesome/free-solid-svg-icons';
 
 const Balance = () => {
+  const {totalBalance} = useTransactions()
+
   return (
     <section className="transition-colors duration-500 flex max-w-60 max-h-28 rounded-xl py-2 px-4 bg-essencial-200 dark:bg-support-600">
+     
       {/* Ícone e Título */}
       <div className="flex-grow">
         <header className="flex items-center">
@@ -14,7 +17,7 @@ const Balance = () => {
 
         {/* Valor do Saldo */}
         <p className="text-3xl font-bold text-primary-950 mt-5 dark:text-essencial-200">
-          R$<span className="ml-1">0,00</span>
+          R$<span className="ml-1">{totalBalance.toFixed(2)}</span>
         </p>
       </div>
 

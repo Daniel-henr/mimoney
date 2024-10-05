@@ -1,8 +1,10 @@
-import React from 'react';
+import { useTransactions } from '../hooks/transactionsContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowTrendDown } from '@fortawesome/free-solid-svg-icons';
 
 const Costs = () => {
+  const {totalCosts} = useTransactions()
+
   return (
     <section className="transition-colors duration-500 bg-essencial-50 border-essencial-200 border-custom-1 flex max-w-60 max-h-28 rounded-xl py-2 px-4 dark:bg-support-950 dark:border-support-600">
       {/* Header com Ícone e Título */}
@@ -14,7 +16,7 @@ const Costs = () => {
 
         {/* Valor da Despesa */}
         <p className="font-bold text-3xl text-primary-950 mt-5 dark:text-essencial-200">
-          -R$<span className="text-additional-700 ml-1">0,00</span>
+          -R$<span className="text-additional-700 ml-1">{totalCosts.toFixed(2)}</span>
         </p>
       </div>
     </section>

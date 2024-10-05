@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTransactions } from '../hooks/transactionsContext';
 import FlowToggle from './flowToggle';
 import PropTypes from 'prop-types';
 
-const DescriptionForm = ({ onSubmit }) => {
+const DescriptionForm = () => {
+  const {addTransaction} = useTransactions()
   const [description, setDescription] = useState('')
   const [value, setValue] = useState('')
   const [isExpense, setisExpense] = useState(false)
@@ -26,7 +28,7 @@ const DescriptionForm = ({ onSubmit }) => {
     console.log('Valor:', transaction.value);
     console.log('Tipo:', transaction.type);
 
-    onSubmit(transaction)
+    addTransaction(transaction)
 
     setDescription('')
     setValue('')
