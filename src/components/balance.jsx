@@ -1,13 +1,17 @@
 import { useTransactions } from '../hooks/transactionsContext';
+import { animated } from '@react-spring/web';
+import { useAnimatedValue } from '../hooks/animatedvalue';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet } from '@fortawesome/free-solid-svg-icons';
+import { truncateValue } from '../hooks/currencyUtils';
 
 const Balance = () => {
-  const {totalBalance} = useTransactions()
+  const { totalBalance } = useTransactions()
+  const springProps = useAnimatedValue(totalBalance)
 
   return (
     <section className="transition-colors duration-500 flex max-w-60 max-h-28 rounded-xl py-2 px-4 bg-essencial-200 dark:bg-support-600">
-     
+
       {/* Ícone e Título */}
       <div className="flex-grow">
         <header className="flex items-center">
@@ -17,15 +21,11 @@ const Balance = () => {
 
         {/* Valor do Saldo */}
         <p className="text-3xl font-bold text-primary-950 mt-5 dark:text-essencial-200">
-          R$<span className="ml-1">{totalBalance.toFixed(2)}</span>
+          <span className="text-primary-950 dark:text-essencial-200">R$</span>{' '}
+          <animated.span>
+            {springProps.val.to((val) => truncateValue(val, 11))}
+          </animated.span>
         </p>
-      </div>
-
-      {/* Percentual */}
-      <div className="flex items-center ml-9 mb-6">
-        <span className="text-xs bg-support-300 text-primary-950 py-0.5 px-1.5 rounded-xl font-bold dark:bg-support-300">
-          0,00%
-        </span>
       </div>
     </section>
   );

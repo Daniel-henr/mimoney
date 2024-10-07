@@ -10,8 +10,7 @@ const CircularProgress = () => {
             }}
           />
         </div>
-        <div className="absolute w-32 h-32 bg-white rounded-full dark:bg-support-950"></div>
-        {/* Texto no centro */}
+        <div className="transition-colors duration-500 absolute w-32 h-32 bg-white rounded-full dark:bg-support-950"></div>
         <span className="absolute text-2xl font-bold text-gray-900 dark:text-essencial-200">15%</span>
       </div>
     );
