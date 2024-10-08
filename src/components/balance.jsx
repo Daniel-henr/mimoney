@@ -10,7 +10,7 @@ const Balance = () => {
   const springProps = useAnimatedValue(totalBalance)
 
   return (
-    <section className="transition-colors duration-500 flex max-w-60 max-h-28 rounded-xl py-2 px-4 bg-essencial-200 dark:bg-support-600">
+    <section className="transition-colors duration-500 flex max-w-custom-17 max-h-28 rounded-xl py-2 px-4 bg-essencial-200 dark:bg-support-600">
 
       {/* Ícone e Título */}
       <div className="flex-grow">

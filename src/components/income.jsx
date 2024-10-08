@@ -10,7 +10,7 @@ const Income = () => {
   const springProps = useAnimatedValue(totalIncome)
 
   return (
-    <section className="transition-colors duration-500 bg-essencial-50 border-essencial-200 border-custom-1 flex max-w-60 max-h-28 rounded-xl py-2 px-2 dark:bg-support-950 dark:border-support-600">
+    <section className="transition-colors duration-500 bg-essencial-50 border-essencial-200 border-custom-1 flex max-w-custom-17 max-h-28 rounded-xl py-2 px-2 dark:bg-support-950 dark:border-support-600">
       {/* Header com Ícone e Título */}
       <div className="flex-grow">
         <header className="flex items-center ml-2">

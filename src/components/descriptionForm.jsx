@@ -36,7 +36,7 @@ const DescriptionForm = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} className='transition-colors duration-500 -mt-custom-17 px-5 py-6 bg-essencial-50 border-custom-1 border-essencial-200 rounded-xl max-w-custom-47 max-h-24 flex items-center dark:bg-support-950 dark:border-support-600'>
+    <form onSubmit={handleSubmit} className='transition-colors duration-500 mt-4 px-5 py-6 bg-essencial-50 border-custom-1 border-essencial-200 rounded-xl max-w-custom-47 max-h-24 flex items-center dark:bg-support-950 dark:border-support-600'>
       <div className='flex'>
         {/* Seção de Descrição */}
         <div>

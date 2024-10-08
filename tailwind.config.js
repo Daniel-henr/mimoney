@@ -71,15 +71,17 @@ export default {
       },
       minWidth: {
         'custom-16.5': '16.5rem',
-        'custom-66': '66rem',
+        'custom-78': '78dvw',
       },
       minHeight: {
         'custom-27': '27rem',
-        'custom-35': '35rem',
+        'custom-35': '88dvh',
       },
       maxWidth: {
+        'custom-17': '15.5rem',
         'custom-31': '31rem',
-        'custom-47': '47.4rem',
+        'custom-47': '47rem',
+        
       },
       clipPath: {
         'custom': 'polygon(0% 100%, 10% 80%, 30% 30%, 50% 60%, 70% 10%, 90% 25%, 100% 100%)',
