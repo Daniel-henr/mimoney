@@ -1,11 +1,11 @@
 import { TransactionsProvider } from '../hooks/transactionsContext'
-import Balance from '../components/balance'
-import Income from '../components/income'
-import Costs from '../components/costs'
-import Savings from '../components/savings'
-import DescriptionForm from '../components/descriptionForm'
-import CashFlow from '../components/cashFlow'
-import CostVisualizer from '../components/costVisualizer'
+import Balance from './balance'
+import Income from './income'
+import Costs from './costs'
+import Savings from './savings'
+import DescriptionForm from './descriptionForm'
+import CashFlow from './cashFlow'
+import CostVisualizer from './costVisualizer'
 
 const Dashboard = () => {
   return (

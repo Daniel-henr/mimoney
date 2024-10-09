@@ -1,12 +1,14 @@
-import React from 'react';
 import Switch from './switch';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSackDollar, faCircleUser, faArrowRightFromBracket, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSackDollar, faCircleUser, faArrowRightFromBracket, faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
 import { faSlack } from '@fortawesome/free-brands-svg-icons';
+import Navbutton from './navbutton';
 
-const Navbar = () => {
+const Navbar = ({activeComponent, setActiveComponent}) => {
+
   return (
-    <nav className="transition-colors duration-300 bg-essencial-100 w-64 min-h-screen border-r-custom-1 border-essencial-200 dark:bg-support-900 dark:border-support-600">
+    <nav className="relative overflow-x-hidden transition-colors duration-300 bg-essencial-100 w-64 min-h-screen border-r-custom-1 border-essencial-200 dark:bg-support-900 dark:border-support-600">
       <header className="flex justify-center items-center pt-3 gap-1">
         <FontAwesomeIcon className="w-9 h-9" icon={faSackDollar} style={{ color: "#28c28b" }} />
         <h1 className="text-3xl font-bold text-primary-950 tracking-wide dark:text-essencial-50">
@@ -14,29 +16,31 @@ const Navbar = () => {
         </h1>
       </header>
 
-      <section className="mt-11">
+      <section className="mt-11 h-5.5">
         <ul>
-          <li className="flex">
-            <div className="transition-colors duration-500 w-1.5 h-9 bg-secondary-400 rounded-2xl -ml-0.5 dark:bg-secondary-700"></div>
-            <a
-              className="transition-colors duration-500 flex justify-start items-center ml-4 py-1.5 pl-2 pr-20 bg-secondary-100 border-custom-1 border-secondary-300 rounded-md dark:bg-secondary-800 dark:border-secondary-700"
-              href="#"
-            >
-              <FontAwesomeIcon className="w-4 h-4 text-secondary-600 dark:text-secondary-300" icon={faSlack}   />
-              <h3 className="px-1 text-base font-bold text-secondary-600 dark:text-secondary-300">Dashboard</h3>
-            </a>
-          </li>
+          <Navbutton
+          isActive={activeComponent === 'dashboard'}
+          onClick={() => setActiveComponent('dashboard')}
+          icon={faSlack}
+          label="Dashboard"
+          />
+          <Navbutton 
+          isActive={activeComponent === 'history'}
+          onClick={() => setActiveComponent('history')}
+          icon={faClockRotateLeft}
+          label="Historico"
+          />
         </ul>
       </section>
 
-      <section className="mt-custom-21">
+      <section className="mt-custom-45">
         <div className="ml-3 flex justify-between items-center">
           <h2 className="text-base font-bold text-primary-950 dark:text-essencial-50">Theme color</h2>
-            <Switch />
+          <Switch />
         </div>
 
         <div className="transition-colors duration-500 mt-4 mx-3 px-2 h-11 w-56 bg-essencial-50 flex border-essencial-200 rounded-lg border-custom-1 items-center dark:bg-support-950 dark:border-support-600">
-          <FontAwesomeIcon icon={faCircleUser} className="w-8 h-8 text-support-600 dark:text-support-200"  />
+          <FontAwesomeIcon icon={faCircleUser} className="w-8 h-8 text-support-600 dark:text-support-200" />
           <div className="text-xs ml-4">
             <h3 className="font-bold text-primary-950 dark:text-essencial-50">Daniel Henrique</h3>
             <h3 className="font-bold text-support-600 mt-2 dark:text-primary-400">danielhpp05@gmail.com</h3>
@@ -44,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <button className="transition-colors duration-500 mt-3 ml-3 w-10 h-8 cursor-pointer bg-essencial-50 border-custom-1 border-essencial-200 rounded-md flex justify-center items-center dark:bg-support-950 dark:border-support-600">
-          <FontAwesomeIcon icon={faArrowRightFromBracket} className="w-4 h-4 text-primary-950 dark:text-essencial-50"  />
+          <FontAwesomeIcon icon={faArrowRightFromBracket} className="w-4 h-4 text-primary-950 dark:text-essencial-50" />
         </button>
       </section>
 
@@ -53,6 +57,11 @@ const Navbar = () => {
       </footer>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  activeComponent: PropTypes.string.isRequired,
+  setActiveComponent: PropTypes.func.isRequired,
 };
 
 export default Navbar;

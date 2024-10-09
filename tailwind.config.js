@@ -64,10 +64,13 @@ export default {
       },
       margin: {
         'custom-17': '19rem',
-        'custom-21': '21rem',
+        'custom-45': '45dvh',
       },
       borderWidth: {
         'custom-1': '1px',
+      },
+      height:{
+        '5.5': '5.5rem',
       },
       minWidth: {
         'custom-16.5': '16.5rem',
