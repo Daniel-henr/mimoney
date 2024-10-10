@@ -42,6 +42,7 @@ export default {
           300: '#b0b0b0',
           600: '#5a5a5a',
           700: '#4F4F4F',
+          800: '#454545',
           900: '#3d3d3d',
           950: '#262626'
         },
@@ -59,6 +60,7 @@ export default {
         }
       },
       padding: {
+        'custom-6.5': '6.5rem',
         'custom-38': '38px',
         'custom-13': '13rem',
       },
@@ -71,14 +73,22 @@ export default {
       },
       height:{
         '5.5': '5.5rem',
+        'custom-60': '60dvh',
+      },
+      width:{
+        'custom-16.1': '16.1rem',
+        'custom-16.2': '16.2rem',
+        'custom-77': '77dvw',
       },
       minWidth: {
         'custom-16.5': '16.5rem',
+        'custom-77': '77dvw',
         'custom-78': '78dvw',
       },
       minHeight: {
         'custom-27': '27rem',
         'custom-35': '88dvh',
+        'custom-105': '105dvh'
       },
       maxWidth: {
         'custom-17': '15.5rem',
