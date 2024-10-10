@@ -4,7 +4,7 @@ import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 const History = () => {
     return (
         <div>
-            <h1 className="text-primary-950 text-4xl font-semibold ml-4 mt-2 dark:text-essencial-50">Historico</h1>
+            <h1 className="text-primary-950 text-4xl font-semibold ml-4 mt-2 dark:text-essencial-50">Histórico</h1>
             <div className=" min-w-custom-78 min-h-custom-35 p-3 bg-essencial-100 border-essencial-200 border-2 rounded-2xl ml-4 dark:bg-support-900 dark:border-support-700">
                 <div className="flex justify-between mt-10 mx-16">
                     <button className="bg-essencial-50 border-custom-1 border-essencial-200 w-32 rounded-md dark:bg-support-950 dark:border-support-700">

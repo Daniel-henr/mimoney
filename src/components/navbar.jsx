@@ -28,7 +28,7 @@ const Navbar = ({activeComponent, setActiveComponent}) => {
           isActive={activeComponent === 'history'}
           onClick={() => setActiveComponent('history')}
           icon={faClockRotateLeft}
-          label="Historico"
+          label="Histórico"
           />
         </ul>
       </section>
