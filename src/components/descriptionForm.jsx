@@ -33,16 +33,21 @@ const DescriptionForm = () => {
       return;
     }
 
-    const numericValue = parseFloat(value.replace(/\./g, '').replace(',', '.')); // Remove a formatação BR e converte para número
+    const numericValue = parseFloat(value.replace(/\./g, '').replace(',', '.'));
     const transaction = {
       description,
       value: numericValue,
       type: isExpense ? 'Saída' : 'Entrada',
+      Date: new Date().toLocaleDateString('pt-br'),
+      time: new Date().toLocaleTimeString('pt-br'),
     };
 
+    
     console.log('Descrição:', transaction.description);
     console.log('Valor:', transaction.value);
     console.log('Tipo:', transaction.type);
+    console.log('Data:', transaction.Date)
+    console.log('tempo:', transaction.time)
 
     addTransaction(transaction);
 
